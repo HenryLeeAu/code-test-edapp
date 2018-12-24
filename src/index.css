@@ -1,0 +1,120 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height:100%;
+  font-family: Arial, Helvetica, sans-serif
+ 
+}
+
+#root,.App{
+ width:100%;
+ height:100%;
+}
+.align-right{
+  text-align: right;
+}
+.App{
+  display: flex;
+}
+.sidebar{
+  flex: 0 1 300px;
+  min-width: 300px;
+  
+  flex-wrap: wrap;
+}
+.detail{
+  flex: 1 0 auto;
+}
+.movieList{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.movieList li{
+  cursor: pointer;
+}
+.sidebar{
+  background: #efefef;
+  position: relative;
+
+  border-right: 1px solid #cecece;
+
+}
+.SearchBox{
+ flex-basis: 100%;
+ align-self: flex-start;
+ box-sizing: border-box;
+ padding: 10px;
+ border-bottom: 1px solid #bfbfbf;
+
+
+}
+.SearchBox input{
+  box-sizing: border-box;
+  width:100%;
+  padding: 10px;
+  outline: none;
+  height: 45px;
+  font-size: 20px;
+}
+.movieListWrap{
+ 
+}
+.movieList li{
+border-bottom:1px solid #ccc; 
+padding: 10px;
+}
+.movieList .clicked{
+  background: #fff;
+}
+.pagination{
+  border-top: 1px solid #d0cfcf;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  height: 56px;
+}
+.left{
+  flex: 0 0 50px;
+  text-align: right;
+  align-self: center;
+
+}
+.middle{
+  flex: 1 0 auto;
+  text-align: center;
+  align-self: center;
+
+}
+.right{
+  flex: 0 0 50px;
+  align-self: center;
+
+}
+.detail{
+  padding: 10px;
+}
+.detailLeft{
+  float: left;
+  width: 300px;
+}
+.before-select{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #949292;
+  font-size: 24px;
+}
+.movie-title{
+  margin: 0;
+}
+.movie-year{
+  font-style: italic;
+  color: #696868;
+  padding-top: 5px;
+
+}
