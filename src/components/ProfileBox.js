@@ -13,7 +13,7 @@ class ProfileBox extends Component {
   };
   renderProfile() {
     return (
-      <div>
+      <div className="profileWrapper">
         <img
           src="https://i0.wp.com/digital-photography-school.com/wp-content/uploads/flickr/8260117875_5ab9373bce_o.jpg?zoom=2&resize=600%2C401&ssl=1"
           alt="Henry Lee's portrait"
@@ -29,7 +29,11 @@ class ProfileBox extends Component {
     return <button onClick={this.handleLogIn}>Login</button>;
   }
   render() {
-    return this.props.auth ? this.renderProfile() : this.renderLoginButton();
+    return (
+      <div className="profileBox">
+        {this.props.auth ? this.renderProfile() : this.renderLoginButton()}
+      </div>
+    );
   }
 }
 function mapStateToProps(state) {

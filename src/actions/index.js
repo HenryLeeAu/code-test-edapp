@@ -3,6 +3,7 @@ import {
   GET_LIST,
   SHOW_DETAIL,
   UPDATE_CURRENT_PAGE,
+  UPDATE_CURRENT_GENRE,
   GET_GENRE_LIST,
   LOG_IN,
   LOG_OUT,
@@ -23,7 +24,12 @@ export const logOut = () => {
     payload: false,
   };
 };
-
+export const updateCurrentGenre = id => {
+  return {
+    type: UPDATE_CURRENT_GENRE,
+    payload: id,
+  };
+};
 export function inputKeyword(keyword) {
   return {
     type: INPUT_KEYWORD,
@@ -36,8 +42,9 @@ export const getList = data => {
     payload: data,
   };
 };
+
 export const fetchMovieListByGenre = genre => {
-  const api = `http://localhost:4000/movies?genres_like=${genre}`;
+  const api = `http://localhost:4000/movies?genres_like=${genre}&_sort=id&_order=desc`;
   console.log(api);
   return dispatch => {
     axios
@@ -46,12 +53,6 @@ export const fetchMovieListByGenre = genre => {
       .then(data => {
         console.log(data);
         dispatch(getList(data));
-        /*if (data.Response === 'False') {
-          console.log(data.Error);
-          return false;
-        } else {
-          dispatch(getList({ data }));
-        }*/
       })
       .catch(error => {});
   };
@@ -59,8 +60,8 @@ export const fetchMovieListByGenre = genre => {
 export const fetchMovieList = keyword => {
   const api =
     keyword !== undefined
-      ? `http://localhost:4000/movies?q=${keyword}`
-      : `http://localhost:4000/movies`;
+      ? `http://localhost:4000/movies?title_like=${keyword}&_sort=id&_order=desc`
+      : `http://localhost:4000/movies?_sort=id&_order=desc`;
   console.log(api);
   return dispatch => {
     axios
@@ -69,12 +70,44 @@ export const fetchMovieList = keyword => {
       .then(data => {
         console.log(data);
         dispatch(getList(data));
-        /*if (data.Response === 'False') {
-          console.log(data.Error);
-          return false;
+      })
+      .catch(error => {});
+  };
+};
+export const postNewMovie = () => {
+  return dispatch => {
+    axios
+      .post(`http://localhost:4000/movies`, {
+        title: 'They Shall Not Grow Old',
+        year: '2018',
+        poster:
+          'https://m.media-amazon.com/images/M/MV5BNmJhMDI5NGItYTA2YS00YzNjLWE5MjktMTkyNDNiZGI2NzAzXkEyXkFqcGdeQXVyNjI2OTgxNzY@._V1_.jpg',
+        descrpition:
+          'A documentary about World War I with never-before-seen footage to commemorate the centennial of the end of the war.',
+        director: 'Peter Jackson',
+        genres: ['Documentary', 'History', 'War'],
+      })
+      .then(res => res.data)
+      .then(data => {
+        console.log(data);
+        dispatch(fetchMovieList());
+      })
+      .catch(error => {});
+  };
+};
+
+export const deleteMovie = id => {
+  return (dispatch, getState) => {
+    axios
+      .delete(`http://localhost:4000/movies/${id}`)
+      .then(res => res.data)
+      .then(data => {
+        console.log(data);
+        if (getState().searchStatus.keyword.length > 2) {
+          dispatch(fetchMovieList(getState().searchStatus.keyword));
         } else {
-          dispatch(getList({ data }));
-        }*/
+          dispatch(fetchMovieList());
+        }
       })
       .catch(error => {});
   };

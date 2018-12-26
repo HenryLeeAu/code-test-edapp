@@ -1,14 +1,26 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchGenreList, fetchMovieListByGenre } from 'actions';
+import {
+  fetchGenreList,
+  fetchMovieListByGenre,
+  updateCurrentGenre,
+  fetchMovieList,
+} from 'actions';
 class GenreList extends Component {
   componentDidMount() {
-    console.log(this.props);
     this.props.fetchGenreList();
   }
   handleClick(genre) {
+    console.log(this.props.searchStatus.currentGenre, genre);
+    if (this.props.searchStatus.currentGenre === genre) return false;
     this.props.fetchMovieListByGenre(genre);
-    console.log(genre);
+    this.props.updateCurrentGenre(genre);
+  }
+  handleClick2(genre) {
+    console.log(this.props.searchStatus.currentGenre, genre);
+    if (this.props.searchStatus.currentGenre === genre) return false;
+    this.props.fetchMovieList();
+    this.props.updateCurrentGenre(genre);
   }
   renderList() {
     return this.props.genreList.map(genre => {
@@ -21,7 +33,12 @@ class GenreList extends Component {
   }
   render() {
     return this.props.genreList.length > 0 ? (
-      <ul>{this.renderList()}</ul>
+      <ul className="genreList">
+        <li>
+          <button onClick={e => this.handleClick2(null)}>Home</button>
+        </li>
+        {this.renderList()}
+      </ul>
     ) : (
       <div>loading</div>
     );
@@ -30,10 +47,11 @@ class GenreList extends Component {
 function mapStateToProps(state) {
   return {
     genreList: state.genreList,
+    searchStatus: state.searchStatus,
   };
 }
 
 export default connect(
   mapStateToProps,
-  { fetchGenreList, fetchMovieListByGenre }
+  { fetchGenreList, fetchMovieListByGenre, updateCurrentGenre, fetchMovieList }
 )(GenreList);

@@ -2,7 +2,7 @@ import {
   INPUT_KEYWORD,
   GET_LIST,
   SHOW_DETAIL,
-  UPDATE_CURRENT_PAGE,
+  UPDATE_CURRENT_GENRE,
 } from 'actions/types';
 
 export const defaultState = {
@@ -14,11 +14,18 @@ export const defaultState = {
   currentId: null,
   currentMovieList: [],
   currentMovieDetail: null,
+  modalOpen: false,
 };
 export default function(state = defaultState, action) {
   switch (action.type) {
     case INPUT_KEYWORD:
       return { ...state, keyword: action.payload };
+    case UPDATE_CURRENT_GENRE:
+      return {
+        ...state,
+        keyword: '',
+        currentGenre: action.payload,
+      };
     case GET_LIST:
       return {
         ...state,
@@ -31,13 +38,6 @@ export default function(state = defaultState, action) {
         currentId: action.payload.data.imdbID,
         currentMovieDetail: action.payload.data,
       };
-
-    case UPDATE_CURRENT_PAGE:
-      return {
-        ...state,
-        currentPage: action.payload.updatedNum,
-      };
-
     default:
       return state;
   }

@@ -1,11 +1,32 @@
 import React from 'react';
 
-export default function(props) {
+export default function({
+  auth,
+  currentGenre,
+  onClick,
+  poster,
+  title,
+  genres,
+}) {
   return (
-    <li onClick={props.onClick} className={props.clicked ? 'clicked' : ''}>
-      <img src={props.poster} alt={props.title} />
-      <div>{props.title}</div>
-      <div>{props.genres}</div>
+    <li>
+      {auth && currentGenre === null && (
+        <button onClick={onClick}>Delete</button>
+      )}
+      <div className="postWrapper">
+        <img src={poster} alt={title} />
+        {currentGenre === null && (
+          <div className="tag">
+            {genres.map(genre => (
+              <span key={genre}>{genre}</span>
+            ))}
+          </div>
+        )}
+      </div>
+      <div>{title}</div>
+      {auth && currentGenre === null && (
+        <button onClick={onClick}>Delete</button>
+      )}
     </li>
   );
 }

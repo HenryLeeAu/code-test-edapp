@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
-import SearchBox from 'components/SearchBox';
 import MovieList from 'components/MovieList';
-import MovieDetail from 'components/MovieDetail';
-//import Pagination from 'components/Pagination';
 import ProfileBox from 'components/ProfileBox';
 import GenreList from 'components/GenreList';
+import PageToolBar from 'components/PageToolBar';
+import PageTitle from 'components/PageTitle';
+import PageSearchText from 'components/PageSearchText';
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="sidebar">
           <div className="movieListWrap" />
-          Lucky 7 Hub
+          <div className="logo">
+            <span>Lucky 7</span> Hub
+          </div>
           <GenreList />
           <ProfileBox />
         </div>
         <div className="detail">
-          <div>
-            <form>
-              <SearchBox />
-            </form>
-          </div>
+          <PageToolBar />
+          <PageTitle />
+          <PageSearchText />
           <MovieList />
-          <MovieDetail />
         </div>
       </div>
     );

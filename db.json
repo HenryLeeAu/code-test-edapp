@@ -4,68 +4,119 @@
       "id": 1,
       "title": "Aquaman",
       "year": "2018",
-      "poster":"https://m.media-amazon.com/images/M/MV5BOTk5ODg0OTU5M15BMl5BanBnXkFtZTgwMDQ3MDY3NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
-      "descrpition":"ddd",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOTk5ODg0OTU5M15BMl5BanBnXkFtZTgwMDQ3MDY3NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "descrpition": "ddd",
       "director": "James Wan",
-      "genres": ["Action","Adventure", "Fantasy" ]
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ]
     },
     {
       "id": 2,
       "title": "Bumblebee",
       "year": "2018",
-      "poster":"https://m.media-amazon.com/images/M/MV5BOTM3NzE5OTE1Nl5BMl5BanBnXkFtZTgwNzQwNjM3NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
-      "descrpition":"On the run in the year of 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle-scarred and broken",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOTM3NzE5OTE1Nl5BMl5BanBnXkFtZTgwNzQwNjM3NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "descrpition": "On the run in the year of 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle-scarred and broken",
       "director": "Travis Knight",
-      "genres": ["Action", "Adventure", "Sci-Fi" ]
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ]
     },
     {
       "id": 3,
       "title": "Mary Poppins Returns",
       "year": "2018",
-      "poster":"https://m.media-amazon.com/images/M/MV5BMjM0MjEzOTQ1NF5BMl5BanBnXkFtZTgwODg4ODc5NjM@._V1_.jpg",
-      "descrpition":"Decades after her original visit, the magical nanny returns to help the Banks siblings and Michael's children through a difficult time in their lives.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjM0MjEzOTQ1NF5BMl5BanBnXkFtZTgwODg4ODc5NjM@._V1_.jpg",
+      "descrpition": "Decades after her original visit, the magical nanny returns to help the Banks siblings and Michael's children through a difficult time in their lives.",
       "director": "Rob Marshall",
-      "genres": ["Comedy", "Family", "Fantasy" ]
+      "genres": [
+        "Comedy",
+        "Family",
+        "Fantasy"
+      ]
     },
     {
       "id": 4,
       "title": "Second Act",
       "year": "2018",
-      "poster":"https://m.media-amazon.com/images/M/MV5BMjQ2MjI5Njk0MF5BMl5BanBnXkFtZTgwNDQ2NzczNTM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
-      "descrpition":"A big box store worker reinvents her life and her life-story and shows Madison Avenue what street smarts can do.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjQ2MjI5Njk0MF5BMl5BanBnXkFtZTgwNDQ2NzczNTM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "descrpition": "A big box store worker reinvents her life and her life-story and shows Madison Avenue what street smarts can do.",
       "director": "Peter Segal",
-      "genres": ["Comedy", "Romance"]
-    },
-    {
-      "id": 5,
-      "title": "Welcome to Marwen",
-      "year": "2018",
-      "poster":"https://m.media-amazon.com/images/M/MV5BMjIxMjUwMjItMGIxYS00NTlmLTgxZTQtMzg2Yjc1ZWQ3YTYxXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_SY1000_CR0,0,631,1000_AL_.jpg",
-      "descrpition":"A victim of a brutal attack finds a unique and beautiful therapeutic outlet to help him through his recovery process.",
-      "director": "Robert Zemeckis",
-      "genres": ["Biography", "Comedy", "Drama" ]
+      "genres": [
+        "Comedy",
+        "Romance"
+      ]
     },
     {
       "id": 6,
       "title": "Zimna wojna",
       "year": "2018",
-      "poster":"https://m.media-amazon.com/images/M/MV5BNTJmNzExOGItZTQyMi00YzBlLTk0ZTQtNzAxYmUwZDQwZjU4XkEyXkFqcGdeQXVyODE1MjMyNzI@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
-      "descrpition":"A passionate love story between two people of different backgrounds and temperaments, who are fatefully mismatched and yet condemned to each other. Set against the background of the Cold",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNTJmNzExOGItZTQyMi00YzBlLTk0ZTQtNzAxYmUwZDQwZjU4XkEyXkFqcGdeQXVyODE1MjMyNzI@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
+      "descrpition": "A passionate love story between two people of different backgrounds and temperaments, who are fatefully mismatched and yet condemned to each other. Set against the background of the Cold",
       "director": "Pawel Pawlikowski",
-      "genres": ["Drama", "Music", "Romance"]
+      "genres": [
+        "Drama",
+        "Music",
+        "Romance"
+      ]
     },
     {
-      "id": 7,
       "title": "They Shall Not Grow Old",
       "year": "2018",
-      "poster":"https://m.media-amazon.com/images/M/MV5BNmJhMDI5NGItYTA2YS00YzNjLWE5MjktMTkyNDNiZGI2NzAzXkEyXkFqcGdeQXVyNjI2OTgxNzY@._V1_.jpg",
-      "descrpition":"A documentary about World War I with never-before-seen footage to commemorate the centennial of the end of the war.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNmJhMDI5NGItYTA2YS00YzNjLWE5MjktMTkyNDNiZGI2NzAzXkEyXkFqcGdeQXVyNjI2OTgxNzY@._V1_.jpg",
+      "descrpition": "A documentary about World War I with never-before-seen footage to commemorate the centennial of the end of the war.",
       "director": "Peter Jackson",
-      "genres": ["Documentary", "History", "War" ]
+      "genres": [
+        "Documentary",
+        "History",
+        "War"
+      ],
+      "id": 7
+    },
+    {
+      "title": "They Shall Not Grow Old",
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNmJhMDI5NGItYTA2YS00YzNjLWE5MjktMTkyNDNiZGI2NzAzXkEyXkFqcGdeQXVyNjI2OTgxNzY@._V1_.jpg",
+      "descrpition": "A documentary about World War I with never-before-seen footage to commemorate the centennial of the end of the war.",
+      "director": "Peter Jackson",
+      "genres": [
+        "Documentary",
+        "History",
+        "War"
+      ],
+      "id": 8
+    },
+    {
+      "title": "They Shall Not Grow Old",
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNmJhMDI5NGItYTA2YS00YzNjLWE5MjktMTkyNDNiZGI2NzAzXkEyXkFqcGdeQXVyNjI2OTgxNzY@._V1_.jpg",
+      "descrpition": "A documentary about World War I with never-before-seen footage to commemorate the centennial of the end of the war.",
+      "director": "Peter Jackson",
+      "genres": [
+        "Documentary",
+        "History",
+        "War"
+      ],
+      "id": 9
     }
-    
   ],
-  "genres":["Action","Adventure","Biography","Comedy","Drama","Documentary","Family","Fantasy","History","Music","Romance","Sci-Fi","War"]
-  
-  
+  "genres": [
+    "Action",
+    "Adventure",
+    "Biography",
+    "Comedy",
+    "Drama",
+    "Documentary",
+    "Family",
+    "Fantasy",
+    "History",
+    "Music",
+    "Romance",
+    "Sci-Fi",
+    "War"
+  ]
 }
