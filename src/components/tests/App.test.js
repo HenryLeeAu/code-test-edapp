@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 let wrappered;
 
 describe('App', () => {
-  it('auth true and keyword < 2 ', () => {
+  it('render UI ', () => {
     wrappered = shallow(<App />);
     expect(wrappered).toMatchSnapshot();
   });

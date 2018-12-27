@@ -31,3 +31,35 @@ exports[`App auth true and keyword < 2  1`] = `
   </div>
 </div>
 `;
+
+exports[`App render UI  1`] = `
+<div
+  className="App"
+>
+  <div
+    className="sidebar"
+  >
+    <div
+      className="movieListWrap"
+    />
+    <div
+      className="logo"
+    >
+      <span>
+        Lucky 7
+      </span>
+       Hub
+    </div>
+    <Connect(GenreList) />
+    <Connect(ProfileBox) />
+  </div>
+  <div
+    className="detail"
+  >
+    <Connect(PageToolBar) />
+    <Connect(PageTitle) />
+    <Connect(PageSearchText) />
+    <Connect(MovieList) />
+  </div>
+</div>
+`;
