@@ -10,10 +10,12 @@ export default function({
 }) {
   return (
     <li>
-      {auth && currentGenre === null && (
-        <button onClick={onClick}>Delete</button>
-      )}
       <div className="postWrapper">
+        {auth && currentGenre === null && (
+          <button onClick={onClick} className="btnDelete waring sm">
+            Delete
+          </button>
+        )}
         <img src={poster} alt={title} />
         {currentGenre === null && (
           <div className="tag">
@@ -24,9 +26,6 @@ export default function({
         )}
       </div>
       <div>{title}</div>
-      {auth && currentGenre === null && (
-        <button onClick={onClick}>Delete</button>
-      )}
     </li>
   );
 }

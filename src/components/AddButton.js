@@ -6,7 +6,8 @@ class AddButton extends Component {
     this.props.postNewMovie();
   };
   render() {
-    return this.props.auth ? (
+    const { auth, searchStatus } = this.props;
+    return auth && searchStatus.keyword.length <= 2 ? (
       <button onClick={this.handleClick} className="primary lg">
         +Add movie
       </button>
@@ -17,6 +18,7 @@ function mapStateToProps(state) {
   return {
     genreList: state.genreList,
     auth: state.auth,
+    searchStatus: state.searchStatus,
   };
 }
 

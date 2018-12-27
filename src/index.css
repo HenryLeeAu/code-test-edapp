@@ -15,14 +15,39 @@ html,body {
 }
 h2{
   padding: 10px;
+  margin: 0;
+}
+h3{
+  padding: 10px;
+  margin: 0;
+  font-weight: normal;
+    font-style: italic;
+    color: #00BCD4;
 }
 button.primary{
   background: #46b4e7;
   border: 0;
 }
+button.primary:hover{
+  background:#5ab7e2
+}
+button.waring{
+  background: #ff4d78;
+  color: #fff;
+  border: 0;
+}
+button.waring:hover{
+  background:#ff678c
+}
 button.lg{
-  padding:15px;
+  font-size: 16px;
+  padding:12px;
   border-radius: 23px;
+}
+button.sm{
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 3px;
 }
 .align-right{
   text-align: right;
@@ -174,11 +199,22 @@ input:hover,input:focus{
 .profileBox{
  
   width: 100%;
-  background:#1e1e1e;
+  background:#2a2a2a;
   border-top:1px solid #111111;
   height: 75px;
   display: flex;
   justify-content: center;
+}
+.profileWrapper{
+  display: flex;
+}
+.profileWrapper img{
+  align-self: center;
+}
+.profileWrapper .profileInfo{
+  align-self: center;
+  flex: 1 0 auto;
+  padding-left: 10px;
 }
 .profileBox button,.profileBox  .profileWrapper{
   flex: 0 0 auto;
@@ -210,7 +246,8 @@ input:hover,input:focus{
   
   
 }
-.genreList li button:hover, .genreList li button:focus{
+
+.genreList li button:hover, .genreList li button:focus,.genreList li button.clicked{
   background: #fff;
   border-radius: 20px;
 }
@@ -232,7 +269,16 @@ input:hover,input:focus{
   border-radius: 11px;
   color: #fff;
 }
-
+.btnDelete{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.noresult{
+  color: #ccc;
+  padding: 10px;
+  
+}
 @media only screen and (min-width:640px){
   .App{
     display: flex;
@@ -251,6 +297,7 @@ input:hover,input:focus{
   .profileBox{
     position: absolute;
     bottom: 0;
+    background: #1e1e1e;
   }
   
 }

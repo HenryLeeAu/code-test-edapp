@@ -20,13 +20,21 @@ class ProfileBox extends Component {
           width="50"
           height="50"
         />
-        Henry Lee
-        <button onClick={this.handleLogOut}>Logout</button>
+        <div className="profileInfo">
+          <div>Henry Lee</div>
+          <button className="primary sm" onClick={this.handleLogOut}>
+            Logout
+          </button>
+        </div>
       </div>
     );
   }
   renderLoginButton() {
-    return <button onClick={this.handleLogIn}>Login</button>;
+    return (
+      <button className="primary sm" onClick={this.handleLogIn}>
+        Login
+      </button>
+    );
   }
   render() {
     return (

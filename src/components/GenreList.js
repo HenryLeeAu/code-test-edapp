@@ -26,7 +26,14 @@ class GenreList extends Component {
     return this.props.genreList.map(genre => {
       return (
         <li key={genre}>
-          <button onClick={e => this.handleClick(genre)}>{genre}</button>
+          <button
+            onClick={e => this.handleClick(genre)}
+            className={
+              this.props.searchStatus.currentGenre === genre ? 'clicked' : ''
+            }
+          >
+            {genre}
+          </button>
         </li>
       );
     });
@@ -35,7 +42,14 @@ class GenreList extends Component {
     return this.props.genreList.length > 0 ? (
       <ul className="genreList">
         <li>
-          <button onClick={e => this.handleClick2(null)}>Home</button>
+          <button
+            onClick={e => this.handleClick2(null)}
+            className={
+              this.props.searchStatus.currentGenre === null ? 'clicked' : ''
+            }
+          >
+            Home
+          </button>
         </li>
         {this.renderList()}
       </ul>

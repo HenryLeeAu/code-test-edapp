@@ -35,7 +35,7 @@ class MovieList extends Component {
     return this.props.searchStatus.currentMovieList.length > 0 ? (
       <ul className="movieList">{this.renderList()}</ul>
     ) : (
-      `No result`
+      <div className="noresult">No result</div>
     );
   }
 }

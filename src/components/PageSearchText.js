@@ -4,7 +4,7 @@ class PageSearchText extends Component {
   render() {
     const { totalNum, keyword } = this.props.searchStatus;
     return keyword.length > 2 ? (
-      <h2>We have foound {totalNum} results</h2>
+      <h3>We have found {totalNum} result(s)</h3>
     ) : null;
   }
 }
