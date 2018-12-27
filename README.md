@@ -28,4 +28,5 @@ This is a demo app which can allow user searching movie by free text, login and 
 9. Instead of manually keyin infomation to add movies, we add movies automatically which is easier to demo our app to the clients.
 10. 40 movies in total in this app, the add button won't work once hit the limitation.
 11. Use [http://localhost:4000/movies] https://github.com/typicode/json-server  for restful api and also privides free text search and filter features.
+12. Ingore any errror handler for now.
 
