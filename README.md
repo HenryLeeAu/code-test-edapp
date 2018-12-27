@@ -16,7 +16,9 @@ Run tests, this project includes some unit tests.
 
 
 ### Context
-This is a demo app which can allow user searching movie by free text, login/logout and also mopdify the movie database.
+This is a demo app which can allow user searching movie by free text, login/logout and also mopdify the movie database.<br>
+
+Please feel free to add/remove the movies it won't ruin the app :).
 1. Please login first.<br>
 2. user need to login to add/remove movies.<br>
 3. free text search has a 500ms debounce and only start searching when the text is greater than 2 letters.<br>
@@ -29,4 +31,5 @@ This is a demo app which can allow user searching movie by free text, login/logo
 10. 40 movies in total in this app, the add button won't work once hit the limitation.
 11. Use [http://localhost:4000/movies] https://github.com/typicode/json-server  for restful api and also privides free text search and filter features.
 12. Ingore any errror handler for now.
+
 

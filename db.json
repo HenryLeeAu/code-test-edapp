@@ -1,17 +1,92 @@
 {
   "movies": [
     {
-      "title": "Mary Poppins Returns",
-      "year": "2018",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjM0MjEzOTQ1NF5BMl5BanBnXkFtZTgwODg4ODc5NjM@._V1_.jpg",
-      "descrpition": "Decades after her original visit, the magical nanny returns to help the Banks siblings and Michael's children through a difficult time in their lives.",
-      "director": "Rob Marshall",
+      "title": "Skyfall",
+      "year": "2012",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDVhZmJiYWMtNmIzMC00ZWNiLTkzZDYtNGNlZmViMGM4OGExXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "descrpition": "Bonds loyalty to M is tested when her past comes back to haunt her. When MI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost.",
+      "director": "Sam Mendes",
       "genres": [
-        "Comedy",
-        "Family",
-        "Fantasy"
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
+      "id": 1
+    },
+    {
+      "title": "First Man",
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDBhOTMxN2UtYjllYS00NWNiLWE1MzAtZjg3NmExODliMDQ0XkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_SY1000_CR0,0,631,1000_AL_.jpg",
+      "descrpition": "A look at the life of the astronaut, Neil Armstrong, and the legendary space mission that led him to become the first man to walk on the Moon on July 20, 1969.",
+      "director": "Damien Chazelle",
+      "genres": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
+      "id": 2
+    },
+    {
+      "title": "The Nun",
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjM3NzQ5NDcxOF5BMl5BanBnXkFtZTgwNzM4MTQ5NTM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "descrpition": "A priest with a haunted past and a novice on the threshold of her final vows are sent by the Vatican to investigate the death of a young nun in Romania and confront a malevolent force in the form of a demonic nun.",
+      "director": "Corin Hardy",
+      "genres": [
+        "Horror",
+        "Thriller"
       ],
       "id": 3
+    },
+    {
+      "title": "Aquaman",
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOTk5ODg0OTU5M15BMl5BanBnXkFtZTgwMDQ3MDY3NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "descrpition": "ddd",
+      "director": "James Wan",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "id": 4
+    },
+    {
+      "title": "Jerry Maguire",
+      "year": "1996",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYTM0ZWNmZTUtOTVkZS00MTZiLTg3M2QtZjA0Y2RmOWM1NWEyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "descrpition": "When a sports agent has a moral epiphany and is fired for expressing it, he decides to put his new philosophy to the test as an independent agent with the only athlete who stays with him and his former secretary.",
+      "director": "Cameron Crowe",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "id": 5
+    },
+    {
+      "title": "Spider-Man: Into the Spider-Verse",
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "descrpition": "Miles Morales becomes the Spider-Man of his reality and crosses paths with his counterparts from other dimensions to stop a threat to all reality.",
+      "director": "Bob Persichetti, Peter Ramse",
+      "genres": [
+        "Animation, Action, Adventure"
+      ],
+      "id": 6
+    },
+    {
+      "title": "Spider-Man 2",
+      "year": "2004",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzY2ODk4NmUtOTVmNi00ZTdkLTlmOWYtMmE2OWVhNTU2OTVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,729,1000_AL_.jpg",
+      "descrpition": "Peter Parker is beset with troubles in his failing personal life as he battles a brilliant scientist named Doctor Otto Octavius.",
+      "director": "Sam Raimi",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "id": 7
     },
     {
       "title": "Love Actually",
@@ -24,58 +99,20 @@
         "Drama",
         "Romance"
       ],
-      "id": 4
-    },
-    {
-      "title": "Ready Player One",
-      "year": "2018",
-      "poster": "https://m.media-amazon.com/images/M/MV5BY2JiYTNmZTctYTQ1OC00YjU4LWEwMjYtZjkwY2Y5MDI0OTU3XkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
-      "descrpition": "When the creator of a virtual reality world called the OASIS dies, he releases a video in which he challenges all OASIS users to find his Easter Egg, which will give the finder his fortune.",
-      "director": "Steven Spielberg",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Sci-Fi"
-      ],
-      "id": 5
-    },
-    {
-      "title": "Bumblebee",
-      "year": "2018",
-      "poster": "https://m.media-amazon.com/images/M/MV5BOTM3NzE5OTE1Nl5BMl5BanBnXkFtZTgwNzQwNjM3NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
-      "descrpition": "On the run in the year of 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle-scarred and broken",
-      "director": "Travis Knight",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Sci-Fi"
-      ],
-      "id": 6
-    },
-    {
-      "title": "White Boy Rick",
-      "year": "2018",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNjQ5MzY4NjQ4Nl5BMl5BanBnXkFtZTgwMzc1NjU4NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
-      "descrpition": "The story of teenager Richard Wershe Jr., who became an undercover informant for the FBI during the 1980s and was ultimately arrested for drug-trafficking and sentenced to life in prison.",
-      "director": "Yann Demange",
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
-      "id": 7
-    },
-    {
-      "title": "Avengers",
-      "year": "2019",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNGZiMzBkZjMtNjE3Mi00MWNlLWIyYjItYTk3MjY0Yjg5ODZkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
-      "descrpition": "In the aftermath of Thanos wiping out half of all life in the universe, the remaining Avengers must do whats necessary to undo the Mad Titans deed.",
-      "director": "Anthony Russo, Joe Russo",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
       "id": 8
+    },
+    {
+      "title": "Spider-Man 3",
+      "year": "2007",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYTk3MDljOWQtNGI2My00OTEzLTlhYjQtOTQ4ODM2MzUwY2IwXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SY1000_CR0,0,672,1000_AL_.jpg",
+      "descrpition": "A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains, temptations, and revenge.",
+      "director": "Sam Raimi",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "id": 10
     },
     {
       "title": "Casino Royale",
@@ -87,32 +124,6 @@
         "Action",
         "Adventure",
         "Thriller"
-      ],
-      "id": 9
-    },
-    {
-      "title": "Spider-Man: Homecoming",
-      "year": "2017",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNTk4ODQ1MzgzNl5BMl5BanBnXkFtZTgwMTMyMzM4MTI@._V1_SY1000_CR0,0,658,1000_AL_.jpg",
-      "descrpition": "Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man, and finds himself on the trail of a new menace prowling the skies of New York City.",
-      "director": "Jon Watts",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Sci-Fi"
-      ],
-      "id": 10
-    },
-    {
-      "title": "First Man",
-      "year": "2018",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMDBhOTMxN2UtYjllYS00NWNiLWE1MzAtZjg3NmExODliMDQ0XkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_SY1000_CR0,0,631,1000_AL_.jpg",
-      "descrpition": "A look at the life of the astronaut, Neil Armstrong, and the legendary space mission that led him to become the first man to walk on the Moon on July 20, 1969.",
-      "director": "Damien Chazelle",
-      "genres": [
-        "Biography",
-        "Drama",
-        "History"
       ],
       "id": 11
     }
