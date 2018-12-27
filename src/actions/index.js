@@ -8,8 +8,8 @@ import {
   LOG_OUT,
 } from 'actions/types';
 import axios from 'axios';
-import { baseApi } from 'apis';
-
+import { baseApi, moviesReadyData } from 'apis';
+import _ from 'lodash';
 //auth
 export const logIn = () => {
   return {
@@ -75,18 +75,31 @@ export const fetchMovieList = keyword => {
   };
 };
 export const postNewMovie = () => {
-  return dispatch => {
+  return async (dispatch, getState) => {
+    //detect if we have added all the movies
+    if (
+      getState().searchStatus.currentMovieList.length === moviesReadyData.length
+    )
+      return false;
+    const GetUnfilledMovie = new Promise((resolve, reject) => {
+      detectUnfilledMovie();
+      function detectUnfilledMovie() {
+        const id = Math.floor(Math.random() * moviesReadyData.length);
+        const r = _.find(getState().searchStatus.currentMovieList, {
+          title: moviesReadyData[id].title,
+        });
+        if (r !== undefined) {
+          detectUnfilledMovie();
+        } else {
+          console.log(r, moviesReadyData[id]);
+          return resolve(moviesReadyData[id]);
+        }
+      }
+    });
+    //wait until we find the unfilled movie
+    const unfilledMovie = await GetUnfilledMovie;
     axios
-      .post(`${baseApi}movies`, {
-        title: 'They Shall Not Grow Old',
-        year: '2018',
-        poster:
-          'https://m.media-amazon.com/images/M/MV5BNmJhMDI5NGItYTA2YS00YzNjLWE5MjktMTkyNDNiZGI2NzAzXkEyXkFqcGdeQXVyNjI2OTgxNzY@._V1_.jpg',
-        descrpition:
-          'A documentary about World War I with never-before-seen footage to commemorate the centennial of the end of the war.',
-        director: 'Peter Jackson',
-        genres: ['Documentary', 'History', 'War'],
-      })
+      .post(`${baseApi}movies`, unfilledMovie)
       .then(res => res.data)
       .then(data => {
         dispatch(fetchMovieList());
