@@ -1,7 +1,6 @@
 import {
   INPUT_KEYWORD,
-  GET_LIST,
-  SHOW_DETAIL,
+  GET_MOVIE_LIST,
   UPDATE_CURRENT_PAGE,
   UPDATE_CURRENT_GENRE,
   GET_GENRE_LIST,
@@ -24,6 +23,7 @@ export const logOut = () => {
     payload: false,
   };
 };
+
 export const updateCurrentGenre = id => {
   return {
     type: UPDATE_CURRENT_GENRE,
@@ -38,20 +38,19 @@ export function inputKeyword(keyword) {
 }
 export const getList = data => {
   return {
-    type: GET_LIST,
+    type: GET_MOVIE_LIST,
     payload: data,
   };
 };
 
 export const fetchMovieListByGenre = genre => {
-  const api = `http://localhost:4000/movies?genres_like=${genre}&_sort=id&_order=desc`;
-  console.log(api);
+  const api = `${baseApi}movies?genres_like=${genre}&_sort=id&_order=desc`;
+
   return dispatch => {
     axios
       .get(api)
       .then(res => res.data)
       .then(data => {
-        console.log(data);
         dispatch(getList(data));
       })
       .catch(error => {});
@@ -60,24 +59,25 @@ export const fetchMovieListByGenre = genre => {
 export const fetchMovieList = keyword => {
   const api =
     keyword !== undefined
-      ? `http://localhost:4000/movies?title_like=${keyword}&_sort=id&_order=desc`
-      : `http://localhost:4000/movies?_sort=id&_order=desc`;
-  console.log(api);
+      ? `${baseApi}movies?title_like=${keyword}&_sort=id&_order=desc`
+      : `${baseApi}movies?_sort=id&_order=desc`;
+
   return dispatch => {
     axios
       .get(api)
       .then(res => res.data)
       .then(data => {
-        console.log(data);
         dispatch(getList(data));
       })
-      .catch(error => {});
+      .catch(error => {
+        console.log(error);
+      });
   };
 };
 export const postNewMovie = () => {
   return dispatch => {
     axios
-      .post(`http://localhost:4000/movies`, {
+      .post(`${baseApi}movies`, {
         title: 'They Shall Not Grow Old',
         year: '2018',
         poster:
@@ -89,47 +89,32 @@ export const postNewMovie = () => {
       })
       .then(res => res.data)
       .then(data => {
-        console.log(data);
         dispatch(fetchMovieList());
       })
-      .catch(error => {});
+      .catch(error => {
+        console.log(error);
+      });
   };
 };
 
 export const deleteMovie = id => {
   return (dispatch, getState) => {
     axios
-      .delete(`http://localhost:4000/movies/${id}`)
+      .delete(`${baseApi}movies/${id}`)
       .then(res => res.data)
       .then(data => {
-        console.log(data);
         if (getState().searchStatus.keyword.length > 2) {
           dispatch(fetchMovieList(getState().searchStatus.keyword));
         } else {
           dispatch(fetchMovieList());
         }
       })
-      .catch(error => {});
+      .catch(error => {
+        console.log(error);
+      });
   };
 };
-/*
-export const fetchMovieList = (keyword, page) => {
-  const fetchPage = typeof page === 'number' && page > 0 ? page : 1;
-  return dispatch => {
-    axios
-      .get(`${baseApi}&s=${keyword}&page=${fetchPage}`)
-      .then(res => res.data)
-      .then(data => {
-        if (data.Response === 'False') {
-          console.log(data.Error);
-          return false;
-        } else {
-          dispatch(getList({ data, fetchPage }));
-        }
-      })
-      .catch(error => {});
-  };
-};*/
+
 export const getGenreList = data => {
   return {
     type: GET_GENRE_LIST,
@@ -139,34 +124,16 @@ export const getGenreList = data => {
 export const fetchGenreList = () => {
   return dispatch => {
     axios
-      .get(`http://localhost:4000/genres`)
+      .get(`${baseApi}genres`)
       .then(res => {
         dispatch(getGenreList(res.data));
       })
-      .catch(error => {});
-  };
-};
-
-export const showMovieDetail = data => {
-  return {
-    type: SHOW_DETAIL,
-    payload: data,
-  };
-};
-
-export const fetchMovieDetail = id => {
-  return (dispatch, getState) => {
-    axios
-      .get(`${baseApi}&i=${id}`)
-      .then(res => res.data)
-      .then(data => {
-        dispatch(showMovieDetail({ data }));
-      })
       .catch(error => {
-        console.log('request fail');
+        console.log(error);
       });
   };
 };
+
 export const updateCurrentPageNum = num => {
   return {
     type: UPDATE_CURRENT_PAGE,

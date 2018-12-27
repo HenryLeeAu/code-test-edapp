@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieList render 2 results  1`] = `
+<ul
+  className="movieList"
+>
+  <li
+    key="1Aquaman"
+  >
+    <_default
+      clicked={false}
+      currentGenre="Actions"
+      genres={
+        Array [
+          "Action",
+          "Adventure",
+          "Fantasy",
+        ]
+      }
+      onClick={[Function]}
+      poster="https://m.media-amazon.com/images/M/MV5BOTk5ODg0OTU5M15BMl5BanBnXkFtZTgwMDQ3MDY3NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
+      title="Aquaman"
+    />
+  </li>
+  <li
+    key="2Bumblebee"
+  >
+    <_default
+      clicked={false}
+      currentGenre="Actions"
+      genres={
+        Array [
+          "Action",
+          "Adventure",
+          "Sci-Fi",
+        ]
+      }
+      onClick={[Function]}
+      poster="https://m.media-amazon.com/images/M/MV5BOTM3NzE5OTE1Nl5BMl5BanBnXkFtZTgwNzQwNjM3NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
+      title="Bumblebee"
+    />
+  </li>
+</ul>
+`;

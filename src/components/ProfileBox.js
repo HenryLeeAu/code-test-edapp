@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { logIn, logOut } from 'actions';
-class ProfileBox extends Component {
-  componentDidMount() {
-    console.log(this.props);
-  }
+export class ProfileBox extends Component {
   handleLogIn = () => {
     this.props.logIn();
   };
@@ -22,7 +19,11 @@ class ProfileBox extends Component {
         />
         <div className="profileInfo">
           <div>Henry Lee</div>
-          <button className="primary sm" onClick={this.handleLogOut}>
+          <button
+            id="logout"
+            className="primary sm"
+            onClick={this.handleLogOut}
+          >
             Logout
           </button>
         </div>
@@ -31,7 +32,7 @@ class ProfileBox extends Component {
   }
   renderLoginButton() {
     return (
-      <button className="primary sm" onClick={this.handleLogIn}>
+      <button id="login" className="primary sm" onClick={this.handleLogIn}>
         Login
       </button>
     );

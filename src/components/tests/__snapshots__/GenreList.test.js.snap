@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GenreList render 3 genres  1`] = `
+<ul
+  className="genreList"
+>
+  <li>
+    <button
+      className=""
+      onClick={[Function]}
+    >
+      Home
+    </button>
+  </li>
+  <li
+    key="Actions"
+  >
+    <button
+      className="clicked"
+      onClick={[Function]}
+    >
+      Actions
+    </button>
+  </li>
+  <li
+    key="Music"
+  >
+    <button
+      className=""
+      onClick={[Function]}
+    >
+      Music
+    </button>
+  </li>
+</ul>
+`;

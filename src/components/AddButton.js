@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchGenreList, fetchMovieListByGenre, postNewMovie } from 'actions';
-class AddButton extends Component {
+import { postNewMovie } from 'actions';
+export class AddButton extends Component {
   handleClick = e => {
     this.props.postNewMovie();
   };
@@ -24,5 +24,5 @@ function mapStateToProps(state) {
 
 export default connect(
   mapStateToProps,
-  { fetchGenreList, fetchMovieListByGenre, postNewMovie }
+  { postNewMovie }
 )(AddButton);

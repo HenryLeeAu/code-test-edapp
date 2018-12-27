@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddButton auth false 1`] = `""`;
+
+exports[`AddButton auth true and keyword < 2  1`] = `
+<button
+  className="primary lg"
+  onClick={[Function]}
+>
+  +Add movie
+</button>
+`;
+
+exports[`AddButton auth true and keyword > 2  1`] = `""`;

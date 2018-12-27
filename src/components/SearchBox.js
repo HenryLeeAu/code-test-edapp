@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { inputKeyword, fetchMovieList } from 'actions';
 import _ from 'lodash';
-class SearchBox extends Component {
+export class SearchBox extends Component {
   state = {
     value: '',
   };

@@ -1,15 +1,8 @@
 import React from 'react';
 
-export default function({
-  auth,
-  currentGenre,
-  onClick,
-  poster,
-  title,
-  genres,
-}) {
+export default ({ auth, currentGenre, onClick, poster, title, genres }) => {
   return (
-    <li>
+    <React.Fragment>
       <div className="postWrapper">
         {auth && currentGenre === null && (
           <button onClick={onClick} className="btnDelete waring sm">
@@ -26,6 +19,6 @@ export default function({
         )}
       </div>
       <div>{title}</div>
-    </li>
+    </React.Fragment>
   );
-}
+};

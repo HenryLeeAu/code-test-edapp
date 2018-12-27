@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageSearchText keword length < =2 1`] = `""`;
+
+exports[`PageSearchText keword length > 2 1`] = `
+<h3>
+  We have found 
+  4
+   result(s)
+</h3>
+`;

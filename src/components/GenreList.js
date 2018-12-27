@@ -6,51 +6,39 @@ import {
   updateCurrentGenre,
   fetchMovieList,
 } from 'actions';
-class GenreList extends Component {
+export class GenreList extends Component {
   componentDidMount() {
     this.props.fetchGenreList();
   }
+
   handleClick(genre) {
-    console.log(this.props.searchStatus.currentGenre, genre);
     if (this.props.searchStatus.currentGenre === genre) return false;
-    this.props.fetchMovieListByGenre(genre);
+    genre !== null
+      ? this.props.fetchMovieListByGenre(genre)
+      : this.props.fetchMovieList();
     this.props.updateCurrentGenre(genre);
   }
-  handleClick2(genre) {
-    console.log(this.props.searchStatus.currentGenre, genre);
-    if (this.props.searchStatus.currentGenre === genre) return false;
-    this.props.fetchMovieList();
-    this.props.updateCurrentGenre(genre);
+  renderButton(genre) {
+    return (
+      <button
+        onClick={e => this.handleClick(genre)}
+        className={
+          this.props.searchStatus.currentGenre === genre ? 'clicked' : ''
+        }
+      >
+        {genre === null ? 'Home' : genre}
+      </button>
+    );
   }
   renderList() {
     return this.props.genreList.map(genre => {
-      return (
-        <li key={genre}>
-          <button
-            onClick={e => this.handleClick(genre)}
-            className={
-              this.props.searchStatus.currentGenre === genre ? 'clicked' : ''
-            }
-          >
-            {genre}
-          </button>
-        </li>
-      );
+      return <li key={genre}>{this.renderButton(genre)}</li>;
     });
   }
   render() {
     return this.props.genreList.length > 0 ? (
       <ul className="genreList">
-        <li>
-          <button
-            onClick={e => this.handleClick2(null)}
-            className={
-              this.props.searchStatus.currentGenre === null ? 'clicked' : ''
-            }
-          >
-            Home
-          </button>
-        </li>
+        <li>{this.renderButton(null)}</li>
         {this.renderList()}
       </ul>
     ) : (

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Searchbox render UI 1`] = `
+<form>
+  <input
+    onChange={[Function]}
+    placeholder="Search by title (more than 2 letters)"
+    type="text"
+    value=""
+  />
+</form>
+`;

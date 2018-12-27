@@ -1,27 +1,30 @@
-A interview test for Siteminder
+A code test for EdApp
 
 ### `yarn install `
 Install this project
 
+### `yarn api`
+Runs fake movie json db
+Open [http://localhost:4000](http://localhost:4000) to view api in the browser.
 ### `yarn start `
 Runs this project in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 ### `yarn test`
-Run testing, this project includes unit test and intergation test.
+Run tests, this project includes some unit tests.
 
-### `yarn test --coverage`
-See coverage rate of the testing.
 
-### Behaviour
-1. Input the keyword (greater than 3) will start searching related movies.<br>
-2. Pagination will hide prev or next button when we jump to first/last page.<br>
-3. Pagination will be hidden once the result less than 10 movie.<br>
-4. Clicked movie on the list has a different colour and it will be cached until user clicks another one.<br>
-5. Movie list supports scrollbar.<br>
-6. Detail pannel will detact if the poster exists.<br>
-7. Serachbox has a debounce feature which drcreases the request times <br>
+### Context
+This is a demo app which can allow user tp search movie by free text, login and also update the movie database.
+1. Please login first.<br>
+2. user need to login to add/remove movies.<br>
+3. free text search has a 500ms debounce and only start searching when the text is greater than 2 letters.<br>
+4. Base one the design of information archeticture, search box, add movie button, delete button only show up on the home page.<br> Add movie button won't show up under the keyword searching mode.<br>
+5. Add search result status text to provide a clear search status.<br>
+6. Add page header to provide a clear page status.<br>
+7. Highligh current Genre button to provide clear seatus <br>
+8. Ingore movie description on list view for now.
 
 //search for full text
 http://localhost:4000/movies?q=spider

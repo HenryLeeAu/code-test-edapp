@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileBox Log in 1`] = `
+<div
+  className="profileBox"
+>
+  <button
+    className="primary sm"
+    id="login"
+    onClick={[Function]}
+  >
+    Login
+  </button>
+</div>
+`;
+
+exports[`ProfileBox Log out  1`] = `
+<div
+  className="profileBox"
+>
+  <div
+    className="profileWrapper"
+  >
+    <img
+      alt="Henry Lee's portrait"
+      height="50"
+      src="https://i0.wp.com/digital-photography-school.com/wp-content/uploads/flickr/8260117875_5ab9373bce_o.jpg?zoom=2&resize=600%2C401&ssl=1"
+      width="50"
+    />
+    <div
+      className="profileInfo"
+    >
+      <div>
+        Henry Lee
+      </div>
+      <button
+        className="primary sm"
+        id="logout"
+        onClick={[Function]}
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</div>
+`;
