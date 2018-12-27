@@ -16,7 +16,7 @@ Run tests, this project includes some unit tests.
 
 
 ### Context
-This is a demo app which can allow user searching movie by free text, login and also mopdify the movie database.
+This is a demo app which can allow user searching movie by free text, login/logout and also mopdify the movie database.
 1. Please login first.<br>
 2. user need to login to add/remove movies.<br>
 3. free text search has a 500ms debounce and only start searching when the text is greater than 2 letters.<br>
