@@ -24,6 +24,14 @@ h3{
     font-style: italic;
     color: #00BCD4;
 }
+h4{
+  margin: 10px 0 0;
+}
+p{
+  color: #7b7b7b;
+  font-size: 14px;
+  margin:  0 0 10px;
+}
 button.primary{
   background: #46b4e7;
   border: 0;
@@ -288,7 +296,7 @@ input:hover,input:focus{
   .logo{
     text-align: left;
   }
-  .genreList{
+  .nav{
     max-height: calc( 100% - 143px );
     overflow-y: auto;
   }

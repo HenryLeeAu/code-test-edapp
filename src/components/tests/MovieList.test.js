@@ -17,7 +17,7 @@ const props = {
         year: '2018',
         poster:
           'https://m.media-amazon.com/images/M/MV5BOTk5ODg0OTU5M15BMl5BanBnXkFtZTgwMDQ3MDY3NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg',
-        descrpition: 'ddd',
+        descripition: 'ddd',
         director: 'James Wan',
         genres: ['Action', 'Adventure', 'Fantasy'],
       },
@@ -27,7 +27,7 @@ const props = {
         year: '2018',
         poster:
           'https://m.media-amazon.com/images/M/MV5BOTM3NzE5OTE1Nl5BMl5BanBnXkFtZTgwNzQwNjM3NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg',
-        descrpition:
+        descripition:
           'On the run in the year of 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle-scarred and broken',
         director: 'Travis Knight',
         genres: ['Action', 'Adventure', 'Sci-Fi'],

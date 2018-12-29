@@ -1,6 +1,14 @@
 import React from 'react';
 
-export default ({ auth, currentGenre, onClick, poster, title, genres }) => {
+export default ({
+  auth,
+  currentGenre,
+  onClick,
+  poster,
+  title,
+  genres,
+  descripition,
+}) => {
   return (
     <React.Fragment>
       <div className="postWrapper">
@@ -18,7 +26,8 @@ export default ({ auth, currentGenre, onClick, poster, title, genres }) => {
           </div>
         )}
       </div>
-      <div>{title}</div>
+      <h4>{title}</h4>
+      <p>{descripition}</p>
     </React.Fragment>
   );
 };

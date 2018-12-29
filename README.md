@@ -29,7 +29,7 @@ Add movie button won't show up under the keyword searching mode.<br>
 5. Add a search result status text to provide a clear searching status.<br>
 6. Add page header to provide a clear page status.<br>
 7. Highligh current Genre button to provide a clear navigation status<br>
-8. Ingore movie description on list view to keep the simplicity of list view. <br>
+8. Every moive should belong to mutiple genres.<br>
 9. Instead of manually keyin infomation to add new movies, this app can add movies automatically which is easier for us to demo to our clients.
 10. 40 movies in total in this app, the add button won't work once hit the limitation.<br>
 11. Use [http://localhost:4000/movies] https://github.com/typicode/json-server  for restful api which also privides keyword search and filter features.<br>

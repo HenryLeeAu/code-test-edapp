@@ -37,10 +37,12 @@ export class GenreList extends Component {
   }
   render() {
     return this.props.genreList.length > 0 ? (
-      <ul className="genreList">
-        <li>{this.renderButton(null)}</li>
-        {this.renderList()}
-      </ul>
+      <nav>
+        <ul className="genreList">
+          <li>{this.renderButton(null)}</li>
+          {this.renderList()}
+        </ul>
+      </nav>
     ) : (
       <div>loading</div>
     );

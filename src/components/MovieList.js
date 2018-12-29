@@ -19,6 +19,7 @@ export class MovieList extends Component {
             title={movie.title}
             poster={movie.poster}
             genres={movie.genres}
+            descripition={movie.descripition}
             auth={this.props.auth}
             currentGenre={this.props.searchStatus.currentGenre}
             clicked={movie.id === this.props.searchStatus.currentId}
