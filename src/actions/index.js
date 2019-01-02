@@ -1,7 +1,6 @@
 import {
   INPUT_KEYWORD,
   GET_MOVIE_LIST,
-  UPDATE_CURRENT_PAGE,
   UPDATE_CURRENT_GENRE,
   GET_GENRE_LIST,
   LOG_IN,
@@ -136,28 +135,5 @@ export const fetchGenreList = () => {
       .catch(error => {
         console.log(error);
       });
-  };
-};
-
-export const updateCurrentPageNum = num => {
-  return {
-    type: UPDATE_CURRENT_PAGE,
-    payload: num,
-  };
-};
-export const increaseCurrentPage = () => {
-  return (dispatch, getState) => {
-    const { currentPage, totalPages, keyword } = getState().searchStatus;
-    if (currentPage >= totalPages) return false;
-
-    dispatch(fetchMovieList(keyword, currentPage + 1));
-  };
-};
-
-export const decreaseCurrentPage = () => {
-  return (dispatch, getState) => {
-    const { currentPage, keyword } = getState().searchStatus;
-    if (currentPage <= 1) return false;
-    dispatch(fetchMovieList(keyword, currentPage - 1));
   };
 };
