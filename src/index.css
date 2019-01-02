@@ -296,8 +296,8 @@ input:hover,input:focus{
   .logo{
     text-align: left;
   }
-  .nav{
-    max-height: calc( 100% - 143px );
+  nav{
+    max-height: calc( 100% - 140px );
     overflow-y: auto;
   }
   .genreList li{
