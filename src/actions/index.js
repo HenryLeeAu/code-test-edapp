@@ -10,6 +10,7 @@ import {
 import axios from 'axios';
 import { baseApi, moviesReadyData } from 'apis';
 import _ from 'lodash';
+
 //auth
 export const logIn = () => {
   return {
@@ -49,9 +50,7 @@ export const fetchMovieListByGenre = genre => {
   return dispatch => {
     axios
       .get(api)
-      .then(res => {
-        dispatch(getList(res.data));
-      })
+      .then(res => dispatch(getList(res.data)))
       .catch(error => {});
   };
 };
@@ -64,10 +63,7 @@ export const fetchMovieList = keyword => {
   return dispatch => {
     axios
       .get(api)
-      .then(res => res.data)
-      .then(data => {
-        dispatch(getList(data));
-      })
+      .then(res => dispatch(getList(res.data)))
       .catch(error => {
         console.log(error);
       });
@@ -99,10 +95,7 @@ export const postNewMovie = () => {
     const unfilledMovie = await GetUnfilledMovie;
     axios
       .post(`${baseApi}movies`, unfilledMovie)
-      .then(res => res.data)
-      .then(data => {
-        dispatch(fetchMovieList());
-      })
+      .then(res => dispatch(fetchMovieList()))
       .catch(error => {
         console.log(error);
       });
