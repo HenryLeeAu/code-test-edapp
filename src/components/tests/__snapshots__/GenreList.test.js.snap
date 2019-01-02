@@ -1,36 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`GenreList render 3 genres  1`] = `
-<ul
-  className="genreList"
->
-  <li>
-    <button
-      className=""
-      onClick={[Function]}
-    >
-      Home
-    </button>
-  </li>
-  <li
-    key="Actions"
+<nav>
+  <ul
+    className="genreList"
   >
-    <button
-      className="clicked"
-      onClick={[Function]}
+    <li>
+      <button
+        className=""
+        onClick={[Function]}
+      >
+        Home
+      </button>
+    </li>
+    <li
+      key="Actions"
     >
-      Actions
-    </button>
-  </li>
-  <li
-    key="Music"
-  >
-    <button
-      className=""
-      onClick={[Function]}
+      <button
+        className="clicked"
+        onClick={[Function]}
+      >
+        Actions
+      </button>
+    </li>
+    <li
+      key="Music"
     >
-      Music
-    </button>
-  </li>
-</ul>
+      <button
+        className=""
+        onClick={[Function]}
+      >
+        Music
+      </button>
+    </li>
+  </ul>
+</nav>
 `;

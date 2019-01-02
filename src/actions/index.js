@@ -49,9 +49,8 @@ export const fetchMovieListByGenre = genre => {
   return dispatch => {
     axios
       .get(api)
-      .then(res => res.data)
-      .then(data => {
-        dispatch(getList(data));
+      .then(res => {
+        dispatch(getList(res.data));
       })
       .catch(error => {});
   };
