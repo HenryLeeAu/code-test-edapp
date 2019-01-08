@@ -39,22 +39,11 @@
       "id": 3
     },
     {
-      "title": "Spider-Man: Into the Spider-Verse",
-      "year": "2018",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
-      "descripition": "Miles Morales becomes the Spider-Man of his reality and crosses paths with his counterparts from other dimensions to stop a threat to all reality.",
-      "director": "Bob Persichetti, Peter Ramse",
-      "genres": [
-        "Animation, Action, Adventure"
-      ],
-      "id": 6
-    },
-    {
-      "title": "Robin Hood",
-      "year": "2018",
-      "poster": "https://m.media-amazon.com/images/M/MV5BOGQzZDM0NGUtZGE1NS00ZjQwLTk0N2EtMWI0NTgxYTkwYWQ4XkEyXkFqcGdeQXVyNDMzMzI5MjM@._V1_SY1000_CR0,0,648,1000_AL_.jpg",
-      "descripition": "A war-hardened Crusader and his Moorish commander mount an audacious revolt against the corrupt English crown in a thrilling action-adventure packed with gritty battlefield exploits, mind-blowing fight choreography, and a timeless romance.",
-      "director": "Otto Bathurst",
+      "title": "Mission: Impossible II",
+      "year": "2000",
+      "poster": "https://m.media-amazon.com/images/M/MV5BN2RkYWVkZDQtNTMxMi00NWQ4LWE2ODctNmQzOWM2NjQzYzdlXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg",
+      "descripition": "IMF Agent Ethan Hunt is sent to Sydney, to find and destroy a genetically modified disease called \"Chimera\"",
+      "director": "John Woo",
       "genres": [
         "Action",
         "Adventure",
@@ -63,68 +52,40 @@
       "id": 7
     },
     {
-      "title": "Peppermint",
+      "title": "Venom",
       "year": "2018",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNWVlMjQ3MjItOWE3YS00YTYwLWE0ZDMtZWMyZWY1NzkxNWIwXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_SX675_AL_.jpg",
-      "descripition": "Five years after her husband and daughter are killed in a senseless act of violence, a woman comes back from self-imposed exile to seek revenge against those responsible and the system that let them go free.",
-      "director": "Pierre Morel",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzAwNzUzNjY4MV5BMl5BanBnXkFtZTgwMTQ5MzM0NjM@._V1_.jpg",
+      "descripition": "When Eddie Brock acquires the powers of a symbiote, he will have to release his alter-ego \"Venom\" to save his life.",
+      "director": "Ruben Fleischer",
       "genres": [
         "Action",
-        "Drama",
-        "Thriller"
+        "Sci-Fi"
       ],
       "id": 8
     },
     {
-      "title": "White Boy Rick",
-      "year": "2018",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNjQ5MzY4NjQ4Nl5BMl5BanBnXkFtZTgwMzc1NjU4NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
-      "descripition": "The story of teenager Richard Wershe Jr., who became an undercover informant for the FBI during the 1980s and was ultimately arrested for drug-trafficking and sentenced to life in prison.",
-      "director": "Yann Demange",
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
-      "id": 10
-    },
-    {
-      "title": "Spider-Man 3",
-      "year": "2007",
-      "poster": "https://m.media-amazon.com/images/M/MV5BYTk3MDljOWQtNGI2My00OTEzLTlhYjQtOTQ4ODM2MzUwY2IwXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SY1000_CR0,0,672,1000_AL_.jpg",
-      "descripition": "A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains, temptations, and revenge.",
-      "director": "Sam Raimi",
+      "title": "Spider-Man: Homecoming",
+      "year": "2017",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNTk4ODQ1MzgzNl5BMl5BanBnXkFtZTgwMTMyMzM4MTI@._V1_SY1000_CR0,0,658,1000_AL_.jpg",
+      "descripition": "Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man, and finds himself on the trail of a new menace prowling the skies of New York City.",
+      "director": "Jon Watts",
       "genres": [
         "Action",
         "Adventure",
         "Sci-Fi"
       ],
-      "id": 44
+      "id": 9
     },
     {
-      "title": "Avengers",
-      "year": "2019",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNGZiMzBkZjMtNjE3Mi00MWNlLWIyYjItYTk3MjY0Yjg5ODZkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
-      "descripition": "In the aftermath of Thanos wiping out half of all life in the universe, the remaining Avengers must do whats necessary to undo the Mad Titans deed.",
-      "director": "Anthony Russo, Joe Russo",
+      "title": "Fight Club",
+      "year": "1999",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjJmYTNkNmItYjYyZC00MGUxLWJhNWMtZDY4Nzc1MDAwMzU5XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,676,1000_AL_.jpg",
+      "descripition": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+      "director": "David Fincher",
       "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
+        "Drama"
       ],
-      "id": 45
-    },
-    {
-      "title": "Justice League",
-      "year": "2017",
-      "poster": "https://m.media-amazon.com/images/M/MV5BYWVhZjZkYTItOGIwYS00NmRkLWJlYjctMWM0ZjFmMDU4ZjEzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_SX675_AL_.jpg",
-      "descripition": "Fueled by his restored faith in humanity and inspired by Supermans selfless act, Bruce Wayne enlists the help of his newfound ally, Diana Prince, to face an even greater enemy.",
-      "director": "Zack Snyder",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "id": 46
+      "id": 10
     },
     {
       "title": "Spectre",
@@ -137,20 +98,148 @@
         "Adventure",
         "Thriller"
       ],
-      "id": 47
+      "id": 11
     },
     {
-      "title": "Mission: Impossible II",
-      "year": "2000",
-      "poster": "https://m.media-amazon.com/images/M/MV5BN2RkYWVkZDQtNTMxMi00NWQ4LWE2ODctNmQzOWM2NjQzYzdlXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg",
-      "descripition": "IMF Agent Ethan Hunt is sent to Sydney, to find and destroy a genetically modified disease called \"Chimera\"",
-      "director": "John Woo",
+      "title": "Mission: Impossible - Fallout",
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjRlZmM0ODktY2RjNS00ZDdjLWJhZGYtNDljNWZkMGM5MTg0XkEyXkFqcGdeQXVyNjAwMjI5MDk@._V1_SY1000_CR0,0,639,1000_AL_.jpg",
+      "descripition": "Ethan Hunt and his IMF team, along with some familiar allies, race against time after a mission gone wrong.",
+      "director": "Christopher McQuarrie",
       "genres": [
         "Action",
         "Adventure",
         "Thriller"
       ],
-      "id": 48
+      "id": 12
+    },
+    {
+      "title": "Home Alone 2: Lost in New York",
+      "year": "1992",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDI1MzM0Y2YtYmIyMS00ODE3LTlhZjEtZTUyNmEzMTNhZWU5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+      "descripition": "One year after Kevin McCallister was left home alone and had to defeat a pair of bumbling burglars, he accidentally finds himself stranded in New York City - and the same criminals are not far behind.",
+      "director": "Chris Columbus",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Family"
+      ],
+      "id": 13
+    },
+    {
+      "title": "Avengers: Infinity War",
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "descripition": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+      "director": "Anthony Russo, Joe Russo",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "id": 14
+    },
+    {
+      "title": "Aquaman",
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOTk5ODg0OTU5M15BMl5BanBnXkFtZTgwMDQ3MDY3NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "descripition": "ddd",
+      "director": "James Wan",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "id": 15
+    },
+    {
+      "title": "Peppermint",
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNWVlMjQ3MjItOWE3YS00YTYwLWE0ZDMtZWMyZWY1NzkxNWIwXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_SX675_AL_.jpg",
+      "descripition": "Five years after her husband and daughter are killed in a senseless act of violence, a woman comes back from self-imposed exile to seek revenge against those responsible and the system that let them go free.",
+      "director": "Pierre Morel",
+      "genres": [
+        "Action",
+        "Drama",
+        "Thriller"
+      ],
+      "id": 16
+    },
+    {
+      "title": "The Grinch",
+      "year": "2000",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+      "descripition": "On the outskirts of Whoville, there lives a green, revenge-seeking Grinch who plans on ruining the Christmas holiday for all of the citizens of the town.",
+      "director": "Ron Howard",
+      "genres": [
+        "Comedy",
+        "Family",
+        "Fantasy"
+      ],
+      "id": 17
+    },
+    {
+      "title": "Captain America: Civil War ",
+      "year": "2016",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjQ0MTgyNjAxMV5BMl5BanBnXkFtZTgwNjUzMDkyODE@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "descripition": "Political involvement in the Avengers activities causes a rift between Captain America and Iron Man.",
+      "director": "Anthony Russo, Joe Russo",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "id": 18
+    },
+    {
+      "title": "Ready Player One",
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BY2JiYTNmZTctYTQ1OC00YjU4LWEwMjYtZjkwY2Y5MDI0OTU3XkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "descripition": "When the creator of a virtual reality world called the OASIS dies, he releases a video in which he challenges all OASIS users to find his Easter Egg, which will give the finder his fortune.",
+      "director": "Steven Spielberg",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "id": 19
+    },
+    {
+      "title": "Jerry Maguire",
+      "year": "1996",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYTM0ZWNmZTUtOTVkZS00MTZiLTg3M2QtZjA0Y2RmOWM1NWEyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "descripition": "When a sports agent has a moral epiphany and is fired for expressing it, he decides to put his new philosophy to the test as an independent agent with the only athlete who stays with him and his former secretary.",
+      "director": "Cameron Crowe",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "id": 20
+    },
+    {
+      "title": "Spider-Man: Into the Spider-Verse",
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "descripition": "Miles Morales becomes the Spider-Man of his reality and crosses paths with his counterparts from other dimensions to stop a threat to all reality.",
+      "director": "Bob Persichetti, Peter Ramse",
+      "genres": [
+        "Animation, Action, Adventure"
+      ],
+      "id": 21
+    },
+    {
+      "title": "Casino Royale",
+      "year": "2006",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDI5ZWJhOWItYTlhOC00YWNhLTlkNzctNDU5YTI1M2E1MWZhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SY1000_CR0,0,672,1000_AL_.jpg",
+      "descripition": "Armed with a license to kill, Secret Agent James Bond sets out on his first mission as 007, and must defeat a private banker to terrorists in a high stakes game of poker at Casino Royale, Montenegro, but things are not what they seem.",
+      "director": "Martin Campbell",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
+      "id": 22
     }
   ],
   "genres": [

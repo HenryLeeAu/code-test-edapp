@@ -79,12 +79,16 @@ button.sm{
 .logo span{
   color: #696969;
 }
-.detail{
+.detail-scroll{
   background: #1e1e1e;
   flex: 1;
   overflow-y: auto;
-  margin: 0 auto;
+
+
+}
+.detail{
   max-width: 960px;
+  margin: 0 auto;
 }
 .movieList{
   list-style: none;

@@ -18,11 +18,13 @@ class App extends Component {
           <GenreList />
           <ProfileBox />
         </div>
-        <div className="detail">
+        <div className="detail-scroll">
+          <div className="detail">
           <PageToolBar />
           <PageTitle />
           <PageSearchText />
           <MovieList />
+          </div>
         </div>
       </div>
     );
