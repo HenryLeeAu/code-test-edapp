@@ -10,7 +10,8 @@ export default ({
   descripition,
 }) => {
   return (
-    <React.Fragment>
+    
+      <div>
       <div className="postWrapper">
         {auth && currentGenre === null && (
           <button onClick={onClick} className="btnDelete waring sm">
@@ -28,6 +29,7 @@ export default ({
       </div>
       <h4>{title}</h4>
       <p>{descripition}</p>
-    </React.Fragment>
+      </div>
+    
   );
 };

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component,PureComponent } from 'react';
 import { connect } from 'react-redux';
 import {
   fetchGenreList,
@@ -6,11 +6,19 @@ import {
   updateCurrentGenre,
   fetchMovieList,
 } from 'actions';
-export class GenreList extends Component {
+export class GenreList extends PureComponent {
   componentDidMount() {
     this.props.fetchGenreList();
-  }
-
+  }/*
+  shouldComponentUpdate(nextProps){
+    if(this.props.genreList!==nextProps.genreList || this.props.searchStatus.currentGenre !==nextProps.searchStatus.currentGenre ){
+      return true
+    }else{
+      return false
+    }
+   
+   
+  }*/
   handleClick(genre) {
     if (this.props.searchStatus.currentGenre === genre) return false;
     genre !== null

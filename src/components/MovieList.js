@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import MovieListItem from 'components/MovieListItem';
 import { connect } from 'react-redux';
 import { fetchMovieList, deleteMovie } from 'actions';
 
-export class MovieList extends Component {
+export class MovieList extends PureComponent {
   handleDelete(id) {
     this.props.deleteMovie(id);
   }
